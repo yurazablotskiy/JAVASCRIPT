@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Интернет - магазин</title>
+</head>
+
+<body>
+
+  <header>
+    <span class="logo">Progeer Shop</span>
+    <input type="search" placeholder="Поиск по сайту">
+  </header>
+
+  <main class="items">
+
+  </main>
+
+  <aside class="shop-cart-block">
+    <h4>Корзина (<span id="count-items">0</span>) <i class="fa-sharp fa-solid fa-cart-shopping"></i></h4>
+    <div class="titles">
+      <span>Товар</span>
+      <span>Цена</span>
+      <span>Количество</span>
+    </div>
+
+    <div id="shop-cart"> </div>
+
+    <button class="delete-all" onclick="deleteAll()">Удалить всё <i class="fa-solid fa-trash"></i></button>
+    <button class="go-shop">Купить за <b>0.00$</b></button>
+  </aside>
+
+  <button class="shop-cart-button" onclick="showCart()">
+    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+  </button>
+
+  <footer>Все права защищены &copy;</footer>
+
+  <script src="js/items.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
